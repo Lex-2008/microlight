@@ -31,7 +31,7 @@
     
     var reset = function(cls) {
         // nodes to highlight
-        microlighted = _document.getElementsByClassName(cls||'microlight');
+        microlighted = _document.querySelectorAll(cls||'code');
 
         for (i = 0; el = microlighted[i++];) {
             var text  = el.textContent,
